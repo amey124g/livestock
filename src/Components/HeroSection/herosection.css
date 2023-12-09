@@ -1,0 +1,116 @@
+.hero-section{
+    height: auto;
+    padding: 3rem 0 0 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.features{
+    margin: 3rem 3rem 3rem 3rem;
+}
+
+.features-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-card{
+    display: flex;
+    align-items: center;
+}
+
+.features-card-img{
+    width: 3rem;
+    margin-right: 1rem;
+    opacity: 50%;
+}
+
+.features-card-btn{
+    border: none;
+    outline: none;
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin: 0;
+    color: #3A4D39;
+    background-color: white;
+    border-bottom: 2px solid white;
+    padding: 0;
+}
+
+.features-card-btn:hover{
+    transition: 0.35s;
+    border-bottom: 2px solid #3A4D39;
+}
+
+.hero-section-title{
+    font-family: 'Playfair Display', serif;
+    color: #3A4D39;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0 3rem 5rem 3rem;
+    text-align: center;
+    word-spacing: 5px;
+}
+
+.paws-img{
+    position: absolute;
+    bottom: 2.5rem;
+    right: 2rem;
+    width: 8rem;
+}
+
+@media (max-width: 500px) {
+    .hero-section{
+        height: auto;
+        padding: 3rem 0 0 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .features{
+        margin: 3rem 1.5rem 3rem 1.5rem;
+    }
+    
+    .features-flex{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2rem;
+        column-gap: 1rem;
+        justify-content: space-between;
+    }
+
+    .features-card-img{
+        width: 2.5rem;
+        margin-right: 1rem;
+        opacity: 50%;
+    }
+
+    .features-card-btn{
+        border: none;
+        outline: none;
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin: 0;
+        color: #3A4D39;
+        background-color: white;
+        border-bottom: 2px solid white;
+        padding: 0;
+    }
+
+    .hero-section-title{
+        font-family: 'Playfair Display', serif;
+        color: #3A4D39;
+        font-size: 1.95rem;
+        font-weight: 800;
+        margin: 0 1.5rem 3rem 1.5rem;
+        text-align: center;
+        word-spacing: 5px;
+    }
+
+    .paws-img{
+        position: absolute;
+        bottom: 2.5rem;
+        right: 2rem;
+        width: 6rem;
+    }
+}

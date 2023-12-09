@@ -1,0 +1,232 @@
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    height: 4rem;
+    width: auto;
+    box-shadow: 0px 17px 15px -3px rgba(0,0,0,0.1);
+    background-color: white;
+    z-index: 10;
+}
+
+.navbar-left{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left-title{
+    font-size: 1.75rem;
+    margin: 0;
+    font-weight: 700;
+    color: #3A4D39;
+    cursor: pointer;
+}
+
+.navbar-mid{
+    display: flex;
+    align-items: stretch;
+}
+
+.navbar-mid-search-bar{
+    border: 1px solid #3A4D39;
+    outline: none;
+    width: 25rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.search-btn{
+    outline: none;
+    border: none;
+    background-color: #3A4D39;
+    color: white;
+    height: auto;
+}
+
+.search-btn:hover{
+    background-color: #4F6F52;
+}
+
+.navbar-right{
+    display: flex;
+}
+
+.navbar-right-buy-btn{
+    border: 1px solid #3A4D39;
+    outline: none;
+    font-size: 1rem;
+    height: 2.5rem;
+    width: 5rem;
+    padding: 0.25rem;
+    background-color: white;
+    color: black;
+    margin-right: 1rem;
+}
+
+.navbar-right-buy-btn:hover{
+    background-color: #3A4D39;
+    color: white;
+    transition: 0.35s;
+}
+
+.navbar-right-sell-btn{
+    background-color: #3A4D39;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    height: 2.5rem;
+    width: 5rem;
+    padding: 0.25rem;
+    margin-right: 0.5rem;
+}
+
+.navbar-right-sell-btn:hover{
+    border: 1px solid #3A4D39;
+    background-color: white;
+    color: black;
+    transition: 0.35s;
+}
+
+.user-btn{
+    outline: none;
+    border: none;
+    background-color: white;
+    margin-left: 0.5rem;
+}
+
+.user-img{
+    width: 1.625rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: #fff;
+    transition: all 0.3s ease;
+    width: fit-content;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 2rem;
+}
+  
+.bar {
+    width: 23px;
+    height: 2px;
+    background-color: #3A4D39;
+    margin: 6px 0;
+    transition: all 0.3s ease;
+}
+  
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 2.95rem;
+    left: -3rem;
+    height: 100vh;
+    width: 20rem;
+    background-color: white;
+    padding: 1.5rem;
+    color: #fff;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+    padding-left: 3rem;
+}
+  
+.open {
+    transform: scaleX(1);
+}
+  
+.bar.animate:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+  
+.bar.animate:nth-child(2) {
+    opacity: 0;
+}
+  
+.bar.animate:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+  
+.navbar-right-links{
+    color: black;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.navbar-right-links:hover{
+    color: #3A4D39;
+}
+
+@media (max-width: 500px){
+    .navbar{
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+        height: 3rem;
+        width: auto;
+        box-shadow: 0px 17px 15px -3px rgba(0,0,0,0.1);
+    }
+
+    .navbar-left-title{
+        font-size: 1.45rem;
+        font-weight: 700;
+        color: #3A4D39;
+    }
+
+    .navbar-mid{
+        display: none;
+    }
+
+    .navbar-right-buy-btn{
+        display: none;
+    }
+
+    .navbar-right-sell-btn{
+        display: none;
+    }
+
+    .user-btn{
+        outline: none;
+        border: none;
+        background-color: white;
+        margin: 0 0 0 1.5rem;
+        padding: 0;
+    }
+
+    .container {
+        flex-direction: column;
+        margin-right: 1rem;
+    }
+    
+    #menu-icon {
+        display: block;
+        margin: 0;
+    }
+    
+    .menu {
+        top: 2.3rem;
+        left: -1.5rem;
+        width: 65vw;
+        height: 100vh;
+        padding-left: 1.5rem;
+    }
+
+    .navbar-right-links{
+        color: black;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
