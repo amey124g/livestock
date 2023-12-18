@@ -50,7 +50,7 @@ function Herosection() {
             </div>
           </div>
 
-          <h1 className='hero-section-title'>Buy or Sell Animals Easy with Livestock</h1>
+          <h1 className='hero-section-title'>Buy or Sell Animals and Products Easy with Livestock</h1>
     </div>
   )
 }
