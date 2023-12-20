@@ -85,7 +85,55 @@ function Herosection() {
 
           <div className="features">
             <div className="features-flex">
+            <Splide
+            options={{
+              type   : 'loop',
+              drag   : 'free',
+              perPage: 2,
+            }}
+            aria-label="My Favorite Images"
+            className='phone-carousel'
+          >
+            <SplideSlide>
               <div className="features-card">
+                <img src={DogImg} alt="" className="features-card-img" />
+                <div className="features-card-desc">
+                  <button className='features-card-btn'>Buy Animals</button>
+                  <img className="arrow-right" src={ArrowIcon} alt="" />
+                </div>
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="features-card">
+                <img src={CowImg} alt="" className="features-card-img" />
+                <div className="features-card-desc">
+                  <button className='features-card-btn'>Sell Animals</button>
+                  <img className="arrow-right" src={ArrowIcon} alt="" />
+                </div>
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="features-card">
+                <img src={FeedImg} alt="" className="features-card-img" />
+                <div className="features-card-desc">
+                  <button className='features-card-btn'>Animal Feed</button>
+                  <img className="arrow-right" src={ArrowIcon} alt="" />
+                </div>
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+            <div className="features-card">
+                <img src={ProductsImg} alt="" className="features-card-img" />
+                <div className="features-card-desc">
+                  <button className='features-card-btn'>Products</button>
+                  <img className="arrow-right" src={ArrowIcon} alt="" />
+                </div>
+              </div>
+            </SplideSlide>
+          </Splide>
+
+
+              {/* <div className="features-card">
                 <img src={DogImg} alt="" className="features-card-img" />
                 <div className="features-card-desc">
                   <button className='features-card-btn'>Buy Animals</button>
@@ -115,7 +163,7 @@ function Herosection() {
                   <button className='features-card-btn'>Products</button>
                   <img className="arrow-right" src={ArrowIcon} alt="" />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
