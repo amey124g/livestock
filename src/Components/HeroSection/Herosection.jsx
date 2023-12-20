@@ -57,10 +57,10 @@ function Herosection() {
             aria-label="My Favorite Images"
           >
             <SplideSlide>
-              <img src={Img1} alt="Image 1"/>
+              <img className='carousel-banner' src={Img1} alt="Image 1"/>
             </SplideSlide>
             <SplideSlide>
-              <img src={Img2} alt="Image 2"/>
+              <img className='carousel-banner' src={Img2} alt="Image 2"/>
             </SplideSlide>
           </Splide>
 

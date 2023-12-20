@@ -5,6 +5,10 @@
     position: relative;
 }
 
+.carousel-banner{
+    width: 100%;
+}
+
 .mobile-carousel{
     display: none;
 }
