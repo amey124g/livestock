@@ -24,24 +24,29 @@ function Herosection() {
 
   return (
     <div className='hero-section'>
-         {/* <div id="carouselExampleAutoplaying1" class="carousel slide desktop-carousel" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="2000">
-                <img className='carousel-img' src={Img1} class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                <img className='carousel-img' src={Img2} class="d-block w-100" alt="..." />
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-          </div> */}
+      
+          <Splide
+            options={{
+              autoplay: true,
+              type: 'loop',
+              interval: 2000,
+              arrows: false,
+              perPage: 1,
+              pauseOnHover : false,
+              resetProgress: false,
+              rewind: true,
+              pagination: false
+            }}
+            aria-label="My Favorite Images"
+            className='desktop-carousel'
+          >
+            <SplideSlide>
+              <img className='carousel-banner' src={Img1} alt="Image 1"/>
+            </SplideSlide>
+            <SplideSlide>
+              <img className='carousel-banner' src={Img2} alt="Image 2"/>
+            </SplideSlide>
+          </Splide>
 
           <Splide
             options={{
@@ -52,88 +57,23 @@ function Herosection() {
               perPage: 1,
               pauseOnHover : false,
               resetProgress: false,
-              rewind: true
+              rewind: true,
+              pagination: false
             }}
             aria-label="My Favorite Images"
+            className='mobile-carousel'
           >
             <SplideSlide>
-              <img className='carousel-banner' src={Img1} alt="Image 1"/>
+              <img className='carousel-banner' src={mImg1} alt="Image 1"/>
             </SplideSlide>
             <SplideSlide>
-              <img className='carousel-banner' src={Img2} alt="Image 2"/>
+              <img className='carousel-banner' src={mImg2} alt="Image 2"/>
             </SplideSlide>
           </Splide>
-
-          <div id="carouselExampleAutoplaying2" class="carousel slide mobile-carousel" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="2000">
-                <img className='carousel-img' src={mImg1} class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                <img className='carousel-img' src={mImg2} class="d-block w-100" alt="..." />
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-          </div>
 
           <div className="features">
             <div className="features-flex">
-            <Splide
-            options={{
-              type   : 'loop',
-              drag   : 'free',
-              perPage: 2,
-            }}
-            aria-label="My Favorite Images"
-            className='phone-carousel'
-          >
-            <SplideSlide>
               <div className="features-card">
-                <img src={DogImg} alt="" className="features-card-img" />
-                <div className="features-card-desc">
-                  <button className='features-card-btn'>Buy Animals</button>
-                  <img className="arrow-right" src={ArrowIcon} alt="" />
-                </div>
-              </div>
-            </SplideSlide>
-            <SplideSlide>
-              <div className="features-card">
-                <img src={CowImg} alt="" className="features-card-img" />
-                <div className="features-card-desc">
-                  <button className='features-card-btn'>Sell Animals</button>
-                  <img className="arrow-right" src={ArrowIcon} alt="" />
-                </div>
-              </div>
-            </SplideSlide>
-            <SplideSlide>
-              <div className="features-card">
-                <img src={FeedImg} alt="" className="features-card-img" />
-                <div className="features-card-desc">
-                  <button className='features-card-btn'>Animal Feed</button>
-                  <img className="arrow-right" src={ArrowIcon} alt="" />
-                </div>
-              </div>
-            </SplideSlide>
-            <SplideSlide>
-            <div className="features-card">
-                <img src={ProductsImg} alt="" className="features-card-img" />
-                <div className="features-card-desc">
-                  <button className='features-card-btn'>Products</button>
-                  <img className="arrow-right" src={ArrowIcon} alt="" />
-                </div>
-              </div>
-            </SplideSlide>
-          </Splide>
-
-
-              {/* <div className="features-card">
                 <img src={DogImg} alt="" className="features-card-img" />
                 <div className="features-card-desc">
                   <button className='features-card-btn'>Buy Animals</button>
@@ -163,7 +103,7 @@ function Herosection() {
                   <button className='features-card-btn'>Products</button>
                   <img className="arrow-right" src={ArrowIcon} alt="" />
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
 
